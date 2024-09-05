@@ -9,7 +9,7 @@ spec:
     - name: istio-system
   sourceRef:
     kind: GitRepository
-    name: flux-system
+    name: flux2-sync
   path: ./apps
   prune: true
   wait: true
