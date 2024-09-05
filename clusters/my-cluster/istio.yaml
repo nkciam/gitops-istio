@@ -10,7 +10,7 @@ spec:
   wait: true
   sourceRef:
     kind: GitRepository
-    name: flux-system
+    name: flux2-sync
   postBuild:
     substituteFrom:
       - kind: ConfigMap
@@ -20,7 +20,7 @@ apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
 kind: Kustomization
 metadata:
   name: istio-gateway
-  namespace: flux-system
+  namespace: flux2-sync
 spec:
   dependsOn:
     - name: istio-system
@@ -30,4 +30,4 @@ spec:
   wait: true
   sourceRef:
     kind: GitRepository
-    name: flux-system
+    name: flux2-sync
