@@ -10,6 +10,7 @@ spec:
   sourceRef:
     kind: GitRepository
     name: flux2-sync
+    namespace: flux-system
   path: ./apps
   prune: true
   wait: true
